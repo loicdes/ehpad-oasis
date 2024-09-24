@@ -14,7 +14,7 @@ const options = {
 };
 
 const app = express();
-app.use(express.static(__dirname + "/public/"));
+app.use(express.static(__dirname + "/"));
 app.use(bodyParser.json({ limit: "10mb", extended: true }));
 
 app.use(
@@ -30,10 +30,10 @@ app.get("/.well-known/acme-challenge/:file", function (req, res) {
 });
 
 app.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname + "/public/index.html"));
+  res.sendFile(path.join(__dirname + "/index.html"));
 });
 
 http.createServer(app).listen(8085);
 https.createServer(options, app).listen(8551);
 
-console.log("Cours centre sud started !");
+console.log("Ehpad L'Oasis started !");
