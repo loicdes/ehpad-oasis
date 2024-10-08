@@ -200,7 +200,7 @@ h6,
 }
 
 .page-header {
-  padding-top: 12rem;
+  padding-top: 9rem;
   padding-bottom: 6rem;
   background: url(../img/header.jpg) top left no-repeat;
   background-size: cover;
@@ -403,6 +403,9 @@ h6,
   color: #ffffff;
 }
 
+.team-item:hover .team-text h5 {
+  color: #ffffff;
+}
 .team-item .team-social .btn {
   background: var(--light);
   color: var(--primary);
