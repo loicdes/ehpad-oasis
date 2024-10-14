@@ -202,8 +202,8 @@ h6,
 .page-header {
   padding-top: 9rem;
   padding-bottom: 6rem;
-  background: url(../img/header.jpg) top left no-repeat;
-  background-size: cover;
+  background: linear-gradient(0.25turn, white, #ffffffa8),
+    url(../img/bg.png) top right no-repeat;
 }
 
 .page-header .breadcrumb-item,
