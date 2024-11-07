@@ -543,3 +543,39 @@ h6,
 .copyright a:hover {
   color: var(--primary);
 }
+
+/*** Service ***/
+.service-item {
+  transition: 0.5s;
+}
+
+.service-item:hover {
+  margin-top: -10px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+}
+
+.service-item .btn {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.service-item:hover .btn {
+  width: 220px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.filter-active {
+  background: var(--primary);
+  color: #fff;
+}
