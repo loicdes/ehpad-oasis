@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-  --primary: #355efc;
+  --primary: #3593fc;
   --secondary: #e93c05;
   --tertiary: #555555;
   --light: #dfe4fd;
@@ -217,8 +217,7 @@ h6,
 
 /*** Facts ***/
 .facts {
-  background: linear-gradient(rgba(53, 94, 252, 0.95), rgba(53, 94, 252, 0.95)),
-    url(../img/bg.png);
+  background: linear-gradient(#3593fcaa, #3593fcaa), url(../img/bg.png);
 }
 
 /*** Callback ***/
@@ -233,8 +232,7 @@ h6,
   height: 50%;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(53, 94, 252, 0.95), rgba(53, 94, 252, 0.95)),
-    url(../img/bg.png);
+  background: linear-gradient(#3593fcaa, #3593fcaa), url(../img/bg.png);
   z-index: -1;
 }
 
