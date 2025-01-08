@@ -311,6 +311,7 @@ h6,
   display: flex;
   align-items: flex-end;
   padding: 18px;
+  padding-bottom: 0;
   z-index: -1;
   transition: 0.5s;
 }
@@ -322,6 +323,9 @@ h6,
 
 .project-item .project-title h4 {
   transition: 0.5s;
+  display: flex;
+  align-items: center;
+  height: 4rem;
 }
 
 .project-item:hover .project-title h4 {
