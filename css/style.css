@@ -365,9 +365,9 @@ h6,
   position: relative;
   z-index: 2;
 
-  height: 550px;
-  object-fit: fill;
-  width: unset !important;
+  height: 500px;
+  object-fit: cover;
+  max-width: 295px;
   margin: auto;
 }
 
