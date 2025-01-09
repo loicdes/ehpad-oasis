@@ -1,466 +1,696 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSE Ehpad l'Oasis</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta
+      content="Découvrez le Comité Social et Économique de l'Ehpad L'Oasis, dédié à améliorer les conditions de travail et le bien-être des salariés. Explorez nos actions, services, et événements pour le personnel de notre établissement."
+      name="description"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <title>CSE Ehpad l'Oasis</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content="" name="keywords" />
-  <meta
-    content="Découvrez le Comité Social et Économique de l'Ehpad L'Oasis, dédié à améliorer les conditions de travail et le bien-être des salariés. Explorez nos actions, services, et événements pour le personnel de notre établissement."
-    name="description" />
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
 
-  <!-- Favicon -->
-  <link href="img/favicon.ico" rel="icon" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Web Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
-    rel="stylesheet" />
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-  <!-- Icon Font Stylesheet -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-  <!-- Libraries Stylesheet -->
-  <link href="lib/animate/animate.min.css" rel="stylesheet" />
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Customized Bootstrap Stylesheet -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-  <!-- Template Stylesheet -->
-  <link href="css/style.css" rel="stylesheet" />
-</head>
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        role="status"
+        style="width: 3rem; height: 3rem"
+      ></div>
+    </div>
+    <!-- Spinner End -->
 
-<body>
-  <!-- Spinner Start -->
-  <div id="spinner"
-    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-    <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem"></div>
-  </div>
-  <!-- Spinner End -->
-
-  <!-- Navbar Start -->
-  <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s" style="background-color: #ffffff52">
-    <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-      <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-        <h1 class="display-5 text-primary m-0">CSE Ehpad l'Oasis</h1>
-      </a>
-      <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="#" class="nav-item nav-link active">Accueil</a>
-          <a href="about.html" class="nav-item nav-link">A propos</a>
-          <!--<a href="service.html" class="nav-item nav-link">Services</a>-->
-          <div class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Mon CSE</a>
-            <div class="dropdown-menu border-light m-0">
-              <a href="" class="dropdown-item">Procès verbaux</a>
-              <a href="avantages/" class="dropdown-item">Avantages</a>
-            </div>
-          </div>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
-        </div>
-        <div class="d-none d-lg-flex ms-2">
-          <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-            <small class="fab fa-facebook-f text-primary"></small>
-          </a>
-          <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-            <small class="fab fa-twitter text-primary"></small>
-          </a>
-          <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-            <small class="fab fa-linkedin-in text-primary"></small>
-          </a>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <!-- Navbar End -->
-
-  <!-- Carousel Start -->
-  <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
-    <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="w-100" src="img/IMG-6.jpg" style="opacity: 0.5" alt="Image" />
-          <div class="carousel-caption">
-            <div class="container">
-              <div class="row justify-content-start">
-                <div class="col-lg-8 px-5">
-                  <p class="d-inline-block border border-white rounded fw-semi-bold py-1 px-3 animated slideInDown"
-                    style="
-                        background-color: rgba(255, 255, 255, 0.25);
-                        color: #011a41;
-                      ">
-                    Le Comité social et économique de l’ehpad Oasis
-                  </p>
-                  <h1 class="display-1 mb-4 animated slideInDown">
-                    Vos intérêts sont notre préoccupation
-                  </h1>
-                  <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Nos missions</a>
-                </div>
+    <!-- Navbar Start -->
+    <div
+      class="container-fluid fixed-top px-0 wow fadeIn"
+      data-wow-delay="0.1s"
+      style="background-color: #ffffff52"
+    >
+      <nav
+        class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+          <h1 class="display-5 text-primary m-0">CSE Ehpad l'Oasis</h1>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler me-4"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="#" class="nav-item nav-link active">Accueil</a>
+            <a href="about.html" class="nav-item nav-link">A propos</a>
+            <!--<a href="service.html" class="nav-item nav-link">Services</a>-->
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Mon CSE</a
+              >
+              <div class="dropdown-menu border-light m-0">
+                <a href="" class="dropdown-item">Procès verbaux</a>
+                <a href="avantages/" class="dropdown-item">Avantages</a>
               </div>
             </div>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+          <div class="d-none d-lg-flex ms-2">
+            <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+              <small class="fab fa-facebook-f text-primary"></small>
+            </a>
+            <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+              <small class="fab fa-twitter text-primary"></small>
+            </a>
+            <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
+              <small class="fab fa-linkedin-in text-primary"></small>
+            </a>
           </div>
         </div>
-        <div class="carousel-item">
-          <img class="w-100" src="img/IMG-5.jpg" style="opacity: 0.5" alt="Image" />
-          <div class="carousel-caption">
-            <div class="container">
-              <div class="row justify-content-start">
-                <div class="col-lg-8 px-5">
-                  <p style="
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+      <div
+        id="header-carousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="w-100"
+              src="img/IMG-6.jpg"
+              style="opacity: 0.5"
+              alt="Image"
+            />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row justify-content-start">
+                  <div class="col-lg-8 px-5">
+                    <p
+                      class="d-inline-block border border-white rounded fw-semi-bold py-1 px-3 animated slideInDown"
+                      style="
                         background-color: rgba(255, 255, 255, 0.25);
                         color: #011a41;
-                      " class="d-inline-block border border-white rounded fw-semi-bold py-1 px-3 animated slideInDown">
-                    Le CSE de l’établissement d’hébergement pour personnes
-                    âgées dépendant de l’Oasis
-                  </p>
-                  <h1 class="display-1 mb-4 animated slideInDownp">
-                    Une équipe à votre écoute
-                  </h1>
-                  <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Notre équipe</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-  <!-- Carousel End -->
-
-  <!-- Projects Start -->
-  <div class="container-xxl py-5">
-    <div class="container">
-      <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px">
-        <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
-          Nouveautés
-        </p>
-        <h1 class="display-5 mb-5">A la une !</h1>
-      </div>
-      <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.3s">
-        <div class="project-item pe-5 pb-5">
-          <div class="project-img mb-3">
-            <img class="img-fluid rounded" src="img/service-1.jpg" alt="" />
-            <a href=""><i class="fa fa-link fa-3x text-primary"></i></a>
-          </div>
-          <div class="project-title">
-            <h4 class="mb-0">Jeux interentreprises</h4>
-          </div>
-        </div>
-        <div class="project-item pe-5 pb-5">
-          <div class="project-img mb-3">
-            <img class="img-fluid rounded" src="img/service-2.jpg" alt="" />
-            <a href=""><i class="fa fa-link fa-3x text-primary"></i></a>
-          </div>
-          <div class="project-title">
-            <h4 class="mb-0">Activités sportives et culturelles</h4>
-          </div>
-        </div>
-        <div class="project-item pe-5 pb-5">
-          <div class="project-img mb-3">
-            <img class="img-fluid rounded" src="img/service-3.jpg" alt="" />
-            <a href=""><i class="fa fa-link fa-3x text-primary"></i></a>
-          </div>
-          <div class="project-title">
-            <h4 class="mb-0">Offres promotionnelles</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Projects End -->
-
-  <!-- Facts Start -->
-  <div class="container-fluid facts my-5 py-5">
-    <div class="container py-5">
-      <div class="row g-5">
-        <div class="col-sm-6 col-lg-4 text-center wow fadeIn" data-wow-delay="0.1s">
-          <i class="fa fa-users fa-3x text-white mb-3"></i>
-          <h1 class="display-4 text-white" data-toggle="counter-up">98</h1>
-          <span class="fs-5 text-white">Salariés représentés</span>
-          <hr class="bg-white w-25 mx-auto mb-0" />
-        </div>
-        <div class="col-sm-6 col-lg-4 text-center wow fadeIn" data-wow-delay="0.3s">
-          <i class="fa fa-check fa-3x text-white mb-3"></i>
-          <h1 class="display-4 text-white" data-toggle="counter-up">3</h1>
-          <span class="fs-5 text-white">Projets en cours</span>
-          <hr class="bg-white w-25 mx-auto mb-0" />
-        </div>
-        <div class="col-sm-6 col-lg-4 text-center wow fadeIn" data-wow-delay="0.5s">
-          <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
-          <h1 class="display-4 text-white" data-toggle="counter-up">8</h1>
-          <span class="fs-5 text-white">Représentants actifs</span>
-          <hr class="bg-white w-25 mx-auto mb-0" />
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Facts End -->
-
-  <!-- Features Start -->
-  <div class="container-xxl feature py-5">
-    <div class="container">
-      <div class="row g-5 align-items-center">
-        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-          <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
-            Le Comité Social et Economique
-          </p>
-          <h1 class="display-5 mb-4">Pourquoi nous faire confiance ?</h1>
-          <p class="mb-4">
-            Le Comité Social et Économique (CSE) joue un rôle crucial dans
-            votre entreprise.
-          </p>
-          <a class="btn btn-primary py-3 px-5" href="">En savoir plus</a>
-        </div>
-        <div class="col-lg-6">
-          <div class="row g-4 align-items-center">
-            <div class="col-md-6">
-              <div class="row g-4">
-                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
-                  <div class="feature-box border rounded p-4">
-                    <i class="fa fa-check fa-3x text-primary mb-3"></i>
-                    <h4 class="mb-3">Stratégie</h4>
-                    <p class="mb-3">
-                      Il est informé et consulté sur la stratégie économique,
-                      les grandes orientations de l'entreprise, etc...
+                      "
+                    >
+                      Le Comité social et économique de l’ehpad Oasis
                     </p>
-                    <a class="fw-semi-bold" href="">En savoir plus<i class="fa fa-arrow-right ms-1"></i></a>
-                  </div>
-                </div>
-                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
-                  <div class="feature-box border rounded p-4">
-                    <i class="fa fa-check fa-3x text-primary mb-3"></i>
-                    <h4 class="mb-3">Santé et sécurité</h4>
-                    <p class="mb-3">
-                      Il participe à la prévention des risques professionnels,
-                      au respect des règles de sécurité...
-                    </p>
-                    <a class="fw-semi-bold" href="">En savoir plus<i class="fa fa-arrow-right ms-1"></i></a>
+                    <h1 class="display-1 mb-4 animated slideInDown">
+                      Vos intérêts sont notre préoccupation
+                    </h1>
+                    <a
+                      href="about.html"
+                      class="btn btn-primary py-3 px-5 animated slideInDown"
+                      >Nos missions</a
+                    >
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
-              <div class="feature-box border rounded p-4">
-                <i class="fa fa-check fa-3x text-primary mb-3"></i>
-                <h4 class="mb-3">Social et culture</h4>
-                <p class="mb-3">
-                  Clita erat ipsum et lorem et sit, sed stet lorem sit clita
-                  duo justo erat amet
+          </div>
+          <div class="carousel-item">
+            <img
+              class="w-100"
+              src="img/IMG-5.jpg"
+              style="opacity: 0.5"
+              alt="Image"
+            />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row justify-content-start">
+                  <div class="col-lg-8 px-5">
+                    <p
+                      style="
+                        background-color: rgba(255, 255, 255, 0.25);
+                        color: #011a41;
+                      "
+                      class="d-inline-block border border-white rounded fw-semi-bold py-1 px-3 animated slideInDown"
+                    >
+                      Le CSE de l’établissement d’hébergement pour personnes
+                      âgées dépendant de l’Oasis
+                    </p>
+                    <h1 class="display-1 mb-4 animated slideInDownp">
+                      Une équipe à votre écoute
+                    </h1>
+                    <a
+                      href="about.html"
+                      class="btn btn-primary py-3 px-5 animated slideInDown"
+                      >Notre équipe</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div
+          class="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 600px"
+        >
+          <p
+            class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3"
+          >
+            Nouveautés
+          </p>
+          <h1 class="display-5 mb-5">A la une !</h1>
+        </div>
+        <div
+          class="owl-carousel project-carousel wow fadeInUp"
+          data-wow-delay="0.3s"
+        >
+          <div class="project-item pe-5 pb-5">
+            <div class="project-img mb-3">
+              <img class="img-fluid rounded" src="img/service-1.jpg" alt="" />
+              <a><i class="fa fa-link fa-3x text-primary"></i></a>
+            </div>
+            <div class="project-title">
+              <h4 class="mb-0">Jeux interentreprises</h4>
+            </div>
+          </div>
+          <div class="project-item pe-5 pb-5">
+            <div class="project-img mb-3">
+              <img class="img-fluid rounded" src="img/service-2.jpg" alt="" />
+              <a><i class="fa fa-link fa-3x text-primary"></i></a>
+            </div>
+            <div class="project-title">
+              <h4 class="mb-0">Activités sportives et culturelles</h4>
+            </div>
+          </div>
+          <div class="project-item pe-5 pb-5">
+            <div class="project-img mb-3">
+              <img class="img-fluid rounded" src="img/service-3.jpg" alt="" />
+              <a><i class="fa fa-link fa-3x text-primary"></i></a>
+            </div>
+            <div class="project-title">
+              <h4 class="mb-0">Offres promotionnelles</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Projects End -->
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts my-5 py-5">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div
+            class="col-sm-6 col-lg-4 text-center wow fadeIn"
+            data-wow-delay="0.1s"
+          >
+            <i class="fa fa-users fa-3x text-white mb-3"></i>
+            <h1 class="display-4 text-white" data-toggle="counter-up">98</h1>
+            <span class="fs-5 text-white">Salariés représentés</span>
+            <hr class="bg-white w-25 mx-auto mb-0" />
+          </div>
+          <div
+            class="col-sm-6 col-lg-4 text-center wow fadeIn"
+            data-wow-delay="0.3s"
+          >
+            <i class="fa fa-check fa-3x text-white mb-3"></i>
+            <h1 class="display-4 text-white" data-toggle="counter-up">3</h1>
+            <span class="fs-5 text-white">Projets en cours</span>
+            <hr class="bg-white w-25 mx-auto mb-0" />
+          </div>
+          <div
+            class="col-sm-6 col-lg-4 text-center wow fadeIn"
+            data-wow-delay="0.5s"
+          >
+            <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
+            <h1 class="display-4 text-white" data-toggle="counter-up">8</h1>
+            <span class="fs-5 text-white">Représentants actifs</span>
+            <hr class="bg-white w-25 mx-auto mb-0" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Facts End -->
+
+    <!-- Features Start -->
+    <div class="container-xxl feature py-5">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <p
+              class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3"
+            >
+              Le Comité Social et Economique
+            </p>
+            <h1 class="display-5 mb-4">Pourquoi nous faire confiance ?</h1>
+            <p class="mb-4">
+              Le Comité Social et Économique (CSE) joue un rôle crucial dans
+              votre entreprise.
+            </p>
+            <a class="btn btn-primary py-3 px-5" href="about.html"
+              >En savoir plus</a
+            >
+          </div>
+          <div class="col-lg-6">
+            <div class="row g-4 align-items-center">
+              <div class="col-md-6">
+                <div class="row g-4">
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="feature-box border rounded p-4">
+                      <i class="fa fa-check fa-3x text-primary mb-3"></i>
+                      <h4 class="mb-3">Stratégie</h4>
+                      <p class="mb-3">
+                        Il est informé et consulté sur la stratégie économique,
+                        les grandes orientations de l'entreprise, etc...
+                      </p>
+                      <a class="fw-semi-bold" href="about.html"
+                        >En savoir plus<i class="fa fa-arrow-right ms-1"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="feature-box border rounded p-4">
+                      <i class="fa fa-check fa-3x text-primary mb-3"></i>
+                      <h4 class="mb-3">Santé et sécurité</h4>
+                      <p class="mb-3">
+                        Il participe à la prévention des risques professionnels,
+                        au respect des règles de sécurité...
+                      </p>
+                      <a class="fw-semi-bold" href="about.html"
+                        >En savoir plus<i class="fa fa-arrow-right ms-1"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                <div class="feature-box border rounded p-4">
+                  <i class="fa fa-check fa-3x text-primary mb-3"></i>
+                  <h4 class="mb-3">Social et culture</h4>
+                  <p class="mb-3">
+                    Il gère des œuvres sociales telles que les activités de
+                    loisirs, les événements culturels, et les services de
+                    soutien pour les salariés.
+                  </p>
+                  <a class="fw-semi-bold" href="about.html"
+                    >En savoir plus<i class="fa fa-arrow-right ms-1"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Features End -->
+
+    <!-- Callback Start -->
+    <div class="container-fluid callback my-5 pt-5">
+      <div class="container pt-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div
+              class="bg-white border rounded p-4 p-sm-5 wow fadeInUp"
+              data-wow-delay="0.5s"
+            >
+              <div
+                class="text-center mx-auto wow fadeInUp"
+                data-wow-delay="0.1s"
+                style="max-width: 600px"
+              >
+                <p
+                  class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3"
+                >
+                  Une question ? Une suggestion ?
                 </p>
-                <a class="fw-semi-bold" href="">En savoir plus<i class="fa fa-arrow-right ms-1"></i></a>
+                <h1 class="display-5 mb-5">Ecrivez-nous</h1>
+              </div>
+              <div
+                class="alert alert-success"
+                role="alert"
+                id="msgSent"
+                style="display: none"
+              >
+                Votre message a été envoyé !
+              </div>
+              <form id="contact-form" action="" class="row g-3">
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Votre nom"
+                    />
+                    <label for="name">Votre nom</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="mail"
+                      name="email"
+                      placeholder="Votre e-mail"
+                    />
+                    <label for="mail">Votre e-mail</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="mobile"
+                      name="num"
+                      placeholder="Votre numéro de tél."
+                    />
+                    <label for="mobile">Votre numéro de tél.</label>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      name="subject"
+                      placeholder="Objet de la demande"
+                    />
+                    <label for="subject">Objet de la demande</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      placeholder="Leave a message here"
+                      id="message"
+                      name="message"
+                      style="height: 100px"
+                    ></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                </div>
+                <div class="col-12 text-center">
+                  <button class="btn btn-primary w-100 py-3" type="submit">
+                    Envoyer
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Features End -->
+    <!-- Callback End -->
 
-  <!-- Callback Start -->
-  <div class="container-fluid callback my-5 pt-5">
-    <div class="container pt-5">
-      <div class="row justify-content-center">
-        <div class="col-lg-7">
-          <div class="bg-white border rounded p-4 p-sm-5 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px">
-              <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
-                Une question ? Une suggestion ?
-              </p>
-              <h1 class="display-5 mb-5">Ecrivez-nous</h1>
-            </div>
-            <div class="row g-3">
-              <div class="col-sm-6">
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="name" placeholder="Votre nom" />
-                  <label for="name">Votre nom</label>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-floating">
-                  <input type="email" class="form-control" id="mail" placeholder="Votre e-mail" />
-                  <label for="mail">Votre e-mail</label>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="mobile" placeholder="Votre numéro de tél." />
-                  <label for="mobile">Votre numéro de tél.</label>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="subject" placeholder="Objet de la demande" />
-                  <label for="subject">Objet de la demande</label>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-floating">
-                  <textarea class="form-control" placeholder="Leave a message here" id="message"
-                    style="height: 100px"></textarea>
-                  <label for="message">Message</label>
-                </div>
-              </div>
-              <div class="col-12 text-center">
-                <button class="btn btn-primary w-100 py-3" type="submit">
-                  Envoyer
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Callback End -->
-
-  <!-- Testimonial Start -->
-  <div class="container-xxl py-5">
-    <div class="container">
-      <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px">
-        <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
-          Avis
-        </p>
-        <h1 class="display-5 mb-5">Vous en parlez !</h1>
-      </div>
-      <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.3s">
-        <div class="testimonial-item">
-          <div class="testimonial-text border rounded p-4 pt-5 mb-5">
-            <div class="btn-square bg-white border rounded-circle">
-              <i class="fa fa-quote-right fa-2x text-primary"></i>
-            </div>
-            Le CSE de notre entreprise est vraiment à l'écoute des salariés.
-            Grâce à eux, j'ai pu bénéficier de réductions intéressantes pour
-            des activités culturelles et sportives. Ils sont toujours
-            disponibles pour répondre aux questions et pour défendre nos
-            intérêts auprès de la direction. C'est rassurant de savoir qu'on a
-            un interlocuteur en cas de problème.
-          </div>
-          <h4>Jean</h4>
-          <!--<span>Profession</span>-->
-        </div>
-        <div class="testimonial-item">
-          <div class="testimonial-text border rounded p-4 pt-5 mb-5">
-            <div class="btn-square bg-white border rounded-circle">
-              <i class="fa fa-quote-right fa-2x text-primary"></i>
-            </div>
-            Un rôle crucial dans le bien-être des employés. Ils organisent
-            régulièrement des événements conviviaux qui permettent de
-            renforcer la cohésion d'équipe. En plus, ils nous tiennent
-            informés des évolutions importantes de l'entreprise, ce qui est
-            très appréciable. J'aimerais juste qu'il y ait un peu plus
-            d'activités pour les enfants.
-          </div>
-          <h4>Sophie</h4>
-        </div>
-        <div class="testimonial-item">
-          <div class="testimonial-text border rounded p-4 pt-5 mb-5">
-            <div class="btn-square bg-white border rounded-circle">
-              <i class="fa fa-quote-right fa-2x text-primary"></i>
-            </div>
-            Lors de la dernière réunion, ils ont proposé plusieurs
-            améliorations pour les conditions de travail, qui ont ensuite été
-            mises en place. C'est agréable de voir que nos préoccupations sont
-            entendues et qu'il y a une volonté réelle de les résoudre.
-          </div>
-          <h4>Karim</h4>
-        </div>
-        <div class="testimonial-item">
-          <div class="testimonial-text border rounded p-4 pt-5 mb-5">
-            <div class="btn-square bg-white border rounded-circle">
-              <i class="fa fa-quote-right fa-2x text-primary"></i>
-            </div>
-            Ils savent faire le lien entre les salariés et les décisions
-            stratégiques. Les avantages qu'ils proposent, comme les
-            chèques-cadeaux et les voyages, sont un vrai plus. Toutefois, je
-            pense qu'ils pourraient encore améliorer la fréquence des réunions
-            d'information pour les collaborateurs.
-          </div>
-          <h4>Laetitia</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Testimonial End -->
-
-  <!-- Footer Start -->
-  <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5">
-      <div class="row g-5">
-        <div class="col-lg-6 col-md-6">
-          <h4 class="text-white mb-4">CSE Ehpad l'Oasis</h4>
-          <p class="mb-2">
-            <i class="fa fa-map-marker-alt me-3"></i>50 rte Balata, 97234 Fort
-            de France
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div
+          class="text-center mx-auto wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 600px"
+        >
+          <p
+            class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3"
+          >
+            Avis
           </p>
-          <p class="mb-2">
-            <i class="fa fa-phone-alt me-3"></i>05 96 63 21 42 (pressez le chiffre 7)
-          </p>
-          <p class="mb-2">
-            <i class="fa fa-envelope me-3"></i>cse.oasis24@gmail.com
-          </p>
-          <div class="d-flex pt-2">
-            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
-            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
-            <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                class="fab fa-linkedin-in"></i></a>
+          <h1 class="display-5 mb-5">Vous en parlez !</h1>
+        </div>
+        <div
+          class="owl-carousel testimonial-carousel wow fadeInUp"
+          data-wow-delay="0.3s"
+        >
+          <div class="testimonial-item">
+            <div class="testimonial-text border rounded p-4 pt-5 mb-5">
+              <div class="btn-square bg-white border rounded-circle">
+                <i class="fa fa-quote-right fa-2x text-primary"></i>
+              </div>
+              Le CSE de notre entreprise est vraiment à l'écoute des salariés.
+              Grâce à eux, j'ai pu bénéficier de réductions intéressantes pour
+              des activités culturelles et sportives. Ils sont toujours
+              disponibles pour répondre aux questions et pour défendre nos
+              intérêts auprès de la direction. C'est rassurant de savoir qu'on a
+              un interlocuteur en cas de problème.
+            </div>
+            <h4>Jean</h4>
+            <!--<span>Profession</span>-->
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-text border rounded p-4 pt-5 mb-5">
+              <div class="btn-square bg-white border rounded-circle">
+                <i class="fa fa-quote-right fa-2x text-primary"></i>
+              </div>
+              Un rôle crucial dans le bien-être des employés. Ils organisent
+              régulièrement des événements conviviaux qui permettent de
+              renforcer la cohésion d'équipe. En plus, ils nous tiennent
+              informés des évolutions importantes de l'entreprise, ce qui est
+              très appréciable. J'aimerais juste qu'il y ait un peu plus
+              d'activités pour les enfants.
+            </div>
+            <h4>Sophie</h4>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-text border rounded p-4 pt-5 mb-5">
+              <div class="btn-square bg-white border rounded-circle">
+                <i class="fa fa-quote-right fa-2x text-primary"></i>
+              </div>
+              Lors de la dernière réunion, ils ont proposé plusieurs
+              améliorations pour les conditions de travail, qui ont ensuite été
+              mises en place. C'est agréable de voir que nos préoccupations sont
+              entendues et qu'il y a une volonté réelle de les résoudre.
+            </div>
+            <h4>Karim</h4>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-text border rounded p-4 pt-5 mb-5">
+              <div class="btn-square bg-white border rounded-circle">
+                <i class="fa fa-quote-right fa-2x text-primary"></i>
+              </div>
+              Ils savent faire le lien entre les salariés et les décisions
+              stratégiques. Les avantages qu'ils proposent, comme les
+              chèques-cadeaux et les voyages, sont un vrai plus. Toutefois, je
+              pense qu'ils pourraient encore améliorer la fréquence des réunions
+              d'information pour les collaborateurs.
+            </div>
+            <h4>Laetitia</h4>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6">
-          <h4 class="text-white mb-4">Naviguer</h4>
-          <a class="btn btn-link" href="">A propos</a>
-          <a class="btn btn-link" href="">Services</a>
-          <a class="btn btn-link" href="">Contact</a>
+      </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-6 col-md-6">
+            <h4 class="text-white mb-4">CSE Ehpad l'Oasis</h4>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>50 rte Balata, 97234 Fort
+              de France
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>05 96 63 21 42 (pressez le
+              chiffre 7)
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>Numéro interne : 7777
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>cse.oasis24@gmail.com
+            </p>
+            <div class="d-flex pt-2">
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href=""
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a
+                class="btn btn-square btn-outline-light rounded-circle me-2"
+                href=""
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <h4 class="text-white mb-4">Naviguer</h4>
+            <a class="btn btn-link" href="about.html">A propos</a>
+            <a class="btn btn-link" href="avantages/index.html">Avantages</a>
+            <a class="btn btn-link" href="contact.html">Contact</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Footer End -->
+    <!-- Footer End -->
 
-  <!-- Copyright Start -->
-  <div class="container-fluid copyright py-4">
-    <div class="container">
-      <div class="row">
-        <div class="text-center">
-          2024 &copy; CSE Ehpad l'Oasis. Réalisé avec &hearts; par
-          <a href="https://gministudio.fr" target="_blank" rel="dofollow">GminiStudio</a>
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+      <div class="container">
+        <div class="row">
+          <div class="text-center">
+            
+                                      <script>
+                                        document.write(
+                                          new Date().getFullYear()
+                                        );
+                                      </script> &copy; CSE Ehpad l'Oasis. Réalisé avec &hearts; par
+            <a href="https://gministudio.fr" target="_blank" rel="dofollow"
+              >GminiStudio</a
+            >
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Copyright End -->
+    <!-- Copyright End -->
 
-  <!-- Back to Top -->
-  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- Back to Top -->
+    <a
+      href="#"
+      class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
 
-  <!-- JavaScript Libraries -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/waypoints/waypoints.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/counterup/counterup.min.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
 
-  <!-- Template Javascript -->
-  <script src="js/main.js"></script>
-</body>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 
+    <script>
+      let contactForm = document.getElementById("contact-form");
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let form = e.target;
+
+        let template = fetch("./templates/contact.html", {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+          },
+        })
+          .then((response) => {
+            return response.text();
+          })
+          .then((mail) => {
+            mail = mail.replace(/{from}/g, form[0].value);
+            mail = mail.replace(/{email}/g, form[1].value);
+            mail = mail.replace(/{num}/g, form[2].value);
+            mail = mail.replace(/{subject}/g, form[3].value);
+            mail = mail.replace(
+              /{message}/g,
+              form[4].value.replace(/\n/g, "<br>")
+            );
+
+            const mailData = {
+              to: "gministudio31@gmail.com", // list of receivers
+              subject: `[CSE Ehpad Oasis] Nouveau message : ${form[3].value}`,
+              html: mail,
+            };
+            fetch("https://gministudio.fr/send-mail", {
+              method: "POST",
+              body: JSON.stringify({ ...mailData }),
+              headers: {
+                "Content-type": "application/json; charset=UTF-8",
+                "Access-Control-Allow-Origin": "*",
+              },
+            }).then(() => {
+              form.reset();
+              document
+                .getElementById("msgSent")
+                .style.setProperty("display", "block");
+            });
+          });
+        // handle submit
+      });
+    </script>
+  </body>
 </html>

@@ -59,7 +59,7 @@
           <div class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Mon CSE</a>
             <div class="dropdown-menu border-light m-0">
-              <a href="" class="dropdown-item">Procès verbaux</a>
+              <a class="dropdown-item">Procès verbaux</a>
               <a href="avantages/" class="dropdown-item">Avantages</a>
             </div>
           </div>
@@ -107,21 +107,35 @@
             Pour toute information ou suggestion, contactez-nous
           </h1>
           <p class="mb-4">Nous serons ravis de répondre dès que possible.</p>
-          <form>
+          <form id="contact-form" action="">
             <div class="row g-3">
               <div class="col-md-6">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="name" placeholder="Votre nom" />
+                  <input type="text" class="form-control" id="name" 
+                  name="name" placeholder="Votre nom" />
                   <label for="name">Votre nom</label>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-floating">
-                  <input type="email" class="form-control" id="email" placeholder="Votre e-mail" />
+                  <input type="email" class="form-control" 
+                  name="email" id="email" placeholder="Votre e-mail" />
                   <label for="email">Votre e-mail</label>
                 </div>
               </div>
-              <div class="col-12">
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="mobile"
+                    name="num"
+                    placeholder="Votre numéro de tél."
+                  />
+                  <label for="mobile">Votre numéro de tél.</label>
+                </div>
+              </div>
+              <div class="col-md-6">
                 <div class="form-floating">
                   <input type="text" class="form-control" id="subject" placeholder="Objet de la demande" />
                   <label for="subject">Objet de la demande</label>
@@ -200,11 +214,14 @@
           <div class="col-lg-6 col-md-6">
             <h4 class="text-white mb-4">CSE Ehpad l'Oasis</h4>
             <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>50 rte Balata, numéro interne 7777, 97234 Fort
+              <i class="fa fa-map-marker-alt me-3"></i>50 rte Balata, 97234 Fort
               de France
             </p>
             <p class="mb-2">
               <i class="fa fa-phone-alt me-3"></i>05 96 63 21 42 (pressez le chiffre 7)
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>Numéro interne : 7777
             </p>
             <p class="mb-2">
               <i class="fa fa-envelope me-3"></i>cse.oasis24@gmail.com
@@ -222,9 +239,9 @@
           </div>
           <div class="col-lg-6 col-md-6">
             <h4 class="text-white mb-4">Naviguer</h4>
-            <a class="btn btn-link" href="">A propos</a>
-            <a class="btn btn-link" href="">Services</a>
-            <a class="btn btn-link" href="">Contact</a>
+            <a class="btn btn-link" href="about.html">A propos</a>
+            <a class="btn btn-link" href="avantages/index.html">Avantages</a>
+            <a class="btn btn-link" href="contact.html">Contact</a>
           </div>
         </div>
       </div>
@@ -236,7 +253,12 @@
       <div class="container">
         <div class="row">
           <div class="text-center">
-            2024 &copy; CSE Ehpad l'Oasis. Réalisé avec &hearts; par
+            
+                                      <script>
+                                        document.write(
+                                          new Date().getFullYear()
+                                        );
+                                      </script> &copy; CSE Ehpad l'Oasis. Réalisé avec &hearts; par
             <a href="https://gministudio.fr" target="_blank" rel="dofollow">GminiStudio</a>
           </div>
         </div>
@@ -259,6 +281,53 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+    <script>
+      let contactForm = document.getElementById("contact-form");
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let form = e.target;
+
+        let template = fetch("./templates/contact.html", {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+          },
+        })
+          .then((response) => {
+            return response.text();
+          })
+          .then((mail) => {
+            mail = mail.replace(/{from}/g, form[0].value);
+            mail = mail.replace(/{email}/g, form[1].value);
+            mail = mail.replace(/{num}/g, form[2].value);
+            mail = mail.replace(/{subject}/g, form[3].value);
+            mail = mail.replace(
+              /{message}/g,
+              form[4].value.replace(/\n/g, "<br>")
+            );
+
+            const mailData = {
+              to: "gministudio31@gmail.com", // list of receivers
+              subject: `[CSE Ehpad Oasis] Nouveau message : ${form[3].value}`,
+              html: mail,
+            };
+            fetch("https://gministudio.fr/send-mail", {
+              method: "POST",
+              body: JSON.stringify({ ...mailData }),
+              headers: {
+                "Content-type": "application/json; charset=UTF-8",
+                "Access-Control-Allow-Origin": "*",
+              },
+            }).then(() => {
+              form.reset();
+              document
+                .getElementById("msgSent")
+                .style.setProperty("display", "block");
+            });
+          });
+        // handle submit
+      });
+    </script>
 </body>
 
 </html>
