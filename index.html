@@ -650,6 +650,7 @@
       let contactForm = document.getElementById("contact-form");
       contactForm.addEventListener("submit", (e) => {
         e.preventDefault();
+        contactForm.setAttribute('inert', true);
         let form = e.target;
 
         let template = fetch("./templates/contact.html", {
@@ -687,6 +688,7 @@
               document
                 .getElementById("msgSent")
                 .style.setProperty("display", "block");
+                contactForm.removeAttribute('inert');
             });
           });
         // handle submit

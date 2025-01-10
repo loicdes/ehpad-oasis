@@ -107,6 +107,14 @@
             Pour toute information ou suggestion, contactez-nous
           </h1>
           <p class="mb-4">Nous serons ravis de répondre dès que possible.</p>
+          <div
+            class="alert alert-success"
+            role="alert"
+            id="msgSent"
+            style="display: none"
+          >
+            Votre message a été envoyé !
+          </div>
           <form id="contact-form" action="">
             <div class="row g-3">
               <div class="col-md-6">
@@ -287,6 +295,7 @@
       contactForm.addEventListener("submit", (e) => {
         e.preventDefault();
         let form = e.target;
+        contactForm.setAttribute('inert', true);
 
         let template = fetch("./templates/contact.html", {
           headers: {
@@ -323,6 +332,7 @@
               document
                 .getElementById("msgSent")
                 .style.setProperty("display", "block");
+              contactForm.removeAttribute('inert');
             });
           });
         // handle submit
