@@ -6,7 +6,19 @@
   --light: #dfe4fd;
   --dark: #011a41;
 }
-
+.flex-row-reverse {
+  div > ul.d-inline-block > li {
+    display: flex;
+    flex-direction: row-reverse;
+    &::before {
+      content: "\2022";
+      height: 24px;
+      font-size: x-large;
+      margin-top: -5px;
+      margin-left: 10px;
+    }
+  }
+}
 .back-to-top {
   position: fixed;
   display: none;
