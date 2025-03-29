@@ -19,6 +19,26 @@
     }
   }
 }
+.navbar-light .navbar-toggler {
+  border: 2px solid var(--primary);
+}
+.navbar-light .navbar-toggler-icon {
+  filter: invert(42%) sepia(98%) saturate(1806%) hue-rotate(197deg) brightness(106%) contrast(98%);
+}
+
+@media all and (min-width: 991px) {
+  .grid:first-child {
+  /* border-bottom: 1px solid #ffffff; */
+  }
+  .grid .col-md-6:first-child {
+    border-right: 1px solid #ffffff;
+  }
+  .grid .col-md-6,
+  .grid .col-md-12 {
+    padding: 50px;
+  }
+}
+
 .back-to-top {
   position: fixed;
   display: none;
