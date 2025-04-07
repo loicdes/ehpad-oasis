@@ -7,10 +7,8 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const options = {
-  /*key: fs.readFileSync("/etc/letsencrypt/live/courscentresud.fr/privkey.pem"),
-  cert: fs.readFileSync(
-    "/etc/letsencrypt/live/courscentresud.fr/fullchain.pem"
-  ),*/
+  key: fs.readFileSync("/etc/letsencrypt/live/cse-oasis.fr/privkey.pem"),
+  cert: fs.readFileSync("/etc/letsencrypt/live/cse-oasis.fr/fullchain.pem"),
 };
 
 const app = express();
