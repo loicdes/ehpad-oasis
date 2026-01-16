@@ -18,16 +18,17 @@ app.use(bodyParser.json({ limit: "10mb", extended: true }));
 app.use(
   cors({
     origin: "*",
-  })
+  }),
 );
 
 app.get("/.well-known/acme-challenge/:file", function (req, res) {
   res.sendFile(
-    path.join(__dirname + "/.well-known/acme-challenge/" + req.params.file)
+    path.join(__dirname + "/.well-known/acme-challenge/" + req.params.file),
+    { dotfiles: "allow" },
   );
 });
 
-app.get("/*", function (req, res) {
+app.get("/{*any}", function (req, res) {
   res.sendFile(path.join(__dirname + "/index.html"));
 });
 
