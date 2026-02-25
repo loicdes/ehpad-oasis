@@ -1,233 +1,463 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSE Ehpad l'Oasis</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta
+      content="Découvrez le Comité Social et Économique de l'Ehpad L'Oasis, dédié à améliorer les conditions de travail et le bien-être des salariés. Explorez nos actions, services, et événements pour le personnel de notre établissement."
+      name="description"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <title>CSE Ehpad l'Oasis</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content="" name="keywords" />
-  <meta
-    content="Découvrez le Comité Social et Économique de l'Ehpad L'Oasis, dédié à améliorer les conditions de travail et le bien-être des salariés. Explorez nos actions, services, et événements pour le personnel de notre établissement."
-    name="description" />
+    <!-- Favicon -->
+    <link href="../img/logo.jpg" rel="icon" />
 
-  <!-- Favicon -->
-  <link href="../img/logo.jpg" rel="icon" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Web Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
-    rel="stylesheet" />
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-  <!-- Icon Font Stylesheet -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/animate/animate.min.css" rel="stylesheet" />
+    <link
+      href="../lib/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Libraries Stylesheet -->
-  <link href="../lib/animate/animate.min.css" rel="stylesheet" />
-  <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Customized Bootstrap Stylesheet -->
-  <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet" />
+  </head>
 
-  <!-- Template Stylesheet -->
-  <link href="../css/style.css" rel="stylesheet" />
-</head>
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        role="status"
+        style="width: 3rem; height: 3rem"
+      ></div>
+    </div>
+    <!-- Spinner End -->
 
-<body>
-  <!-- Spinner Start -->
-  <div id="spinner"
-    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-    <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem"></div>
-  </div>
-  <!-- Spinner End -->
-
-  <!-- Navbar Start -->
-  <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
-    <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-      <a href="../" class="navbar-brand ms-4 ms-lg-0">
-        <h1 class="display-5 text-primary m-0">CSE Ehpad l'Oasis</h1>
-      </a>
-      <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav ms-auto p-4 p-lg-0">
-          <a href="../" class="nav-item nav-link active">Accueil</a>
-          <!--<a href="service.html" class="nav-item nav-link">Services</a>-->
-          <div class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Mon CSE</a>
-            <div class="dropdown-menu border-light m-0">
-              <a href="../proces-verbaux.html" class="dropdown-item">Procès verbaux</a>
-              <a href="../planning.html" class="dropdown-item" style="text-wrap: auto;">Planification des réunions
-                plénières</a>
-              <a href="../actualites-syndicales.html" class="dropdown-item">Actualités syndicales</a>
-              <a href="../avantages/" class="dropdown-item">Avantages</a>
+    <!-- Navbar Start -->
+    <div
+      class="container-fluid fixed-top px-0 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <nav
+        class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <a href="../" class="navbar-brand ms-4 ms-lg-0">
+          <h1 class="display-5 text-primary m-0">CSE Ehpad l'Oasis</h1>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler me-4"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="../" class="nav-item nav-link active">Accueil</a>
+            <!--<a href="service.html" class="nav-item nav-link">Services</a>-->
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Mon CSE</a
+              >
+              <div class="dropdown-menu border-light m-0">
+                <a href="../proces-verbaux.html" class="dropdown-item"
+                  >Procès verbaux</a
+                >
+                <a
+                  href="../planning.html"
+                  class="dropdown-item"
+                  style="text-wrap: auto"
+                  >Planification des réunions plénières</a
+                >
+                <a href="../actualites-syndicales.html" class="dropdown-item"
+                  >Actualités syndicales</a
+                >
+                <a href="../avantages/" class="dropdown-item">Avantages</a>
+              </div>
             </div>
+            <a href="../contact.html" class="nav-item nav-link">Contact</a>
           </div>
-          <a href="../contact.html" class="nav-item nav-link">Contact</a>
         </div>
-      </div>
-    </nav>
-  </div>
-  <!-- Navbar End -->
-
-  <!-- Page Header Start -->
-  <div class="container-fluid page-header mb-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container">
-      <h1 class="display-3 mb-4 animated slideInDown">
-        Caribea Fit Festival
-      </h1>
-      <nav aria-label="breadcrumb animated slideInDown">
-        <ol class="breadcrumb mb-0">
-          <li class="breadcrumb-item"><a href="../">Accueil</a></li>
-          <li class="breadcrumb-item active" aria-current="page">
-            Caribea Fit Festival
-          </li>
-        </ol>
       </nav>
     </div>
-  </div>
-  <!-- Page Header End -->
+    <!-- Navbar End -->
 
-  <!-- Avantages Start -->
-
-  <div class="container-xxl feature py-4">
-    <div class="container">
-      <div class="row wow fadeInUp justify-content-center mb-3" data-wow-delay="0.1s">
-        <video controls autoplay muted style="max-width: 400px;">
-          <source src="../videos/caribean-fit.mp4" type="video/mp4" />
-          video.
-        </video>
+    <!-- Page Header Start -->
+    <div
+      class="container-fluid page-header mb-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container">
+        <h1 class="display-3 mb-4 animated slideInDown">
+          Caribea Fit Festival
+        </h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+          <ol class="breadcrumb mb-0">
+            <li class="breadcrumb-item"><a href="../">Accueil</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Caribea Fit Festival
+            </li>
+          </ol>
+        </nav>
       </div>
-      <div class="wow fadeInUp" data-wow-delay="0.2s">
-        <hr />
-      </div>
-      <div class="row justify-content-between">
-        <img class="img-fluid rounded wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;"
-          src="../img/caribea-fit.jpg" alt="" />
-        <div class="col-lg-6 d-flex flex-column wow fadeInUp" data-wow-delay="0.1s">
-          <p class="mt-5">
-            Pour les salariés de l'Ehpad Oasis le Caribea Fit Festival c'est :
-          </p>
-          <div class="d-flex flex-wrap align-items-center gap-2">
+    </div>
+    <!-- Page Header End -->
 
-            <div style="height: fit-content" class=" col-sm-4 wow fadeIn border rounded p-1" data-wow-delay="0.1s">
-              <div class="border rounded text-center p-1">
-                <i class="fa fa-2x text-primary mb-2"></i>
-                <h2 class="mb-1" style="overflow-wrap: break-word">0€</h2>
-                <p class="mb-0">Entrée gratuite</p>
+    <!-- Avantages Start -->
+
+    <div class="container-xxl feature py-4">
+      <div class="container">
+        <p class="wow fadeInUp" data-wow-delay="0.1s">
+          Dans le cadre des actions sociales proposées par le CSE, nous avons le
+          plaisir de vous informer de l’ouverture du sondage d’inscription pour
+          la participation au Caribea Fit Festival, qui se tiendra le 11 avril
+          2026.
+        </p>
+        <div
+          class="row wow fadeInUp justify-content-center mb-3"
+          data-wow-delay="0.1s"
+        >
+          <video controls autoplay muted style="max-width: 400px">
+            <source src="../videos/caribean-fit.mp4" type="video/mp4" />
+            video.
+          </video>
+        </div>
+        <div class="wow fadeInUp" data-wow-delay="0.2s">
+          <hr />
+        </div>
+        <div class="row justify-content-between">
+          <img
+            class="img-fluid rounded wow fadeInUp"
+            data-wow-delay="0.1s"
+            style="max-width: 500px"
+            src="../img/caribea-fit.jpg"
+            alt=""
+          />
+          <div
+            class="col-lg-6 d-flex flex-column wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <p class="mt-5">
+              Pour les salariés de l'Ehpad Oasis le Caribea Fit Festival c'est :
+            </p>
+            <div
+              class="d-flex flex-wrap align-items-center justify-content-center"
+            >
+              <div
+                style="height: fit-content"
+                class="col-sm-4 wow fadeIn border rounded p-1"
+                data-wow-delay="0.1s"
+              >
+                <div class="border rounded text-center p-1">
+                  <i class="fa fa-2x text-primary mb-2"></i>
+                  <h2 class="mb-1" style="overflow-wrap: break-word">0€</h2>
+                  <p class="mb-0">Entrée gratuite</p>
+                </div>
+              </div>
+
+              <div
+                style="height: fit-content"
+                class="col-sm-4 wow fadeIn border rounded p-1"
+                data-wow-delay="0.1s"
+              >
+                <div class="border rounded text-center p-1">
+                  <i class="fa fa-2x text-primary mb-2"></i>
+                  <h2 class="mb-1" style="overflow-wrap: break-word">1</h2>
+                  <p class="mb-0">Repas offert</p>
+                </div>
+              </div>
+
+              <div
+                style="height: fit-content"
+                class="col-8 wow fadeIn border rounded p-1"
+                data-wow-delay="0.1s"
+              >
+                <div class="border rounded text-center p-1">
+                  <i class="fa fa-2x text-primary mb-2"></i>
+                  <h2 class="mb-1" style="overflow-wrap: break-word">10min</h2>
+                  <p class="mb-0">Massage décontractant ou bien être</p>
+                </div>
               </div>
             </div>
-
-            <div style="height: fit-content" class="col-sm-4 wow fadeIn border rounded p-1" data-wow-delay="0.1s">
-              <div class="border rounded text-center p-1">
-                <i class="fa fa-2x text-primary mb-2"></i>
-                <h2 class="mb-1" style="overflow-wrap: break-word">1</h2>
-                <p class="mb-0">Repas offert</p>
+            <p class="small">
+              Repas et entrée payants pour les accompagnateurs externes.
+            </p>
+            <h5 class="mt-5 text-center">Formulaire d'inscription</h5>
+            <section class="mt-2">
+              <div
+                class="alert alert-success"
+                role="alert"
+                id="msgSent"
+                style="display: none"
+              >
+                Votre demande d'inscription a été envoyée !
               </div>
-            </div>
-
-            <div style="height: fit-content" class="col-sm-4 wow fadeIn border rounded p-1" data-wow-delay="0.1s">
-              <div class="border rounded text-center p-1">
-                <i class="fa fa-2x text-primary mb-2"></i>
-                <h2 class="mb-1" style="overflow-wrap: break-word">20min</h2>
-                <p class="mb-0">Massage décontractant ou bien être</p>
-              </div>
-            </div>
-
-            <div style="height: fit-content" class="col-sm-4 wow fadeIn border rounded p-1" data-wow-delay="0.1s">
-              <div class="border rounded text-center p-1">
-                <i class="fa fa-2x text-primary mb-2"></i>
-                <h2 class="mb-1" style="overflow-wrap: break-word">1</h2>
-                <p class="mb-0">Espace privatif et ombragé</p>
-              </div>
-            </div>
+              <form>
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Votre nom"
+                    required
+                  />
+                  <label for="name">Nom</label>
+                </div>
+                <div class="form-floating mt-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="prenom"
+                    name="prenom"
+                    placeholder="Votre prénom"
+                    required
+                  />
+                  <label for="prenom">Prénom</label>
+                </div>
+                <div class="form-floating mt-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="unité"
+                    name="unité"
+                    placeholder="Votre unité"
+                    required
+                  />
+                  <label for="unité">Unité/service</label>
+                </div>
+                <div class="form-floating mt-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fonction"
+                    name="fonction"
+                    placeholder="Votre fonction"
+                    required
+                  />
+                  <label for="fonction">Fonction</label>
+                </div>
+                <div class="form-floating mt-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="tele"
+                    name="tele"
+                    placeholder="Votre téléphone"
+                    required
+                  />
+                  <label for="tele">Téléphone</label>
+                </div>
+                <div class="form-floating mt-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Votre email"
+                    required
+                  />
+                  <label for="email">Email</label>
+                </div>
+                <div class="form-floating mt-2">
+                  <select
+                    class="form-select"
+                    id="formule"
+                    name="formule"
+                    aria-label="Formule"
+                    required
+                  >
+                    <option value="Accès journée" selected>
+                      Accès journée – Entrée et repas compris (arrivée à 14h)
+                    </option>
+                    <option value="Accès soirée">
+                      Accès soirée – Entrée comprise (arrivée à partir de 18h)
+                    </option>
+                  </select>
+                  <label for="formule">Formule</label>
+                </div>
+                <div class="d-flex justify-content-center mt-4">
+                  <button type="submit" class="btn btn-primary">
+                    S'inscrire
+                  </button>
+                </div>
+              </form>
+            </section>
           </div>
-          <p class="mt-5">
-            Inscrivez-vous les listes affichées dans les unités.
-          </p>
-          <p>
-            Repas et entrée payants pour les accompagnateurs externes.
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-6"></div>
-    </div>
-  </div>
-  </div>
-  <!-- Avantages End -->
-
-  <!-- Footer Start -->
-  <div class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5">
-      <div class="row g-5">
-        <div class="col-lg-4 col-md-4">
-          <h4 class="text-white mb-4">CSE Ehpad l'Oasis</h4>
-          <p class="mb-2">
-            <i class="fa fa-map-marker-alt me-3"></i>Bat Mandarine Rdc. 50 rte
-            Balata, 97234 Fort de France
-          </p>
-          <p class="mb-2">
-            <i class="fa fa-phone-alt me-3"></i><a class="text-white" href="tel:0596632142">05 96 63 21 42</a> (pressez
-            le
-            chiffre 7)
-          </p>
-          <p class="mb-2">
-            <i class="fa fa-phone-alt me-3"></i>Numéro interne : 7777
-          </p>
-          <p class="mb-2">
-            <i class="fa fa-envelope me-3"></i>cse.oasis24@gmail.com
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-4">
-          <h4 class="mb-4 text-white">Permanence</h4>
-          <p class="mb-2">3e jeudi du mois : 9h-15h</p>
-          <h4 class="mb-4 text-white">Assistance téléphonique</h4>
-          <p class="mb-2">Lun - Ven : 10h - 15h</p>
-        </div>
-        <div class="col-lg-4 col-md-4">
-          <h4 class="text-white mb-4">Naviguer</h4>
-          <a class="btn btn-link" href="index.html">Avantages</a>
-          <a class="btn btn-link" href="../contact.html">Contact</a>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Footer End -->
+    <!-- Avantages End -->
 
-  <!-- Copyright Start -->
-  <div class="container-fluid copyright py-4">
-    <div class="container">
-      <div class="row">
-        <div class="text-center">
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
-          &copy; CSE Ehpad l'Oasis. Réalisé avec &hearts; par
-          <a href="https://gministudio.fr" target="_blank" rel="dofollow">GminiStudio</a>
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-light footer mt-5 py-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-4">
+            <h4 class="text-white mb-4">CSE Ehpad l'Oasis</h4>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>Bat Mandarine Rdc. 50 rte
+              Balata, 97234 Fort de France
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i
+              ><a class="text-white" href="tel:0596632142">05 96 63 21 42</a>
+              (pressez le chiffre 7)
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>Numéro interne : 7777
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>cse.oasis24@gmail.com
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <h4 class="mb-4 text-white">Permanence</h4>
+            <p class="mb-2">3e jeudi du mois : 9h-15h</p>
+            <h4 class="mb-4 text-white">Assistance téléphonique</h4>
+            <p class="mb-2">Lun - Ven : 10h - 15h</p>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <h4 class="text-white mb-4">Naviguer</h4>
+            <a class="btn btn-link" href="index.html">Avantages</a>
+            <a class="btn btn-link" href="../contact.html">Contact</a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Copyright End -->
+    <!-- Footer End -->
 
-  <!-- Back to Top -->
-  <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+      <div class="container">
+        <div class="row">
+          <div class="text-center">
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            &copy; CSE Ehpad l'Oasis. Réalisé avec &hearts; par
+            <a href="https://gministudio.fr" target="_blank" rel="dofollow"
+              >GminiStudio</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright End -->
 
-  <!-- JavaScript Libraries -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../lib/wow/wow.min.js"></script>
-  <script src="../lib/easing/easing.min.js"></script>
-  <script src="../lib/waypoints/waypoints.min.js"></script>
-  <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="../lib/counterup/counterup.min.js"></script>
-  <!-- Isotope  -->
-  <script src="../js/isotope.pkgd.js"></script>
+    <!-- Back to Top -->
+    <a
+      href="#"
+      class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
 
-  <!-- Template Javascript -->
-  <script src="../js/main.js"></script>
-</body>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../lib/counterup/counterup.min.js"></script>
+    <!-- Isotope  -->
+    <script src="../js/isotope.pkgd.js"></script>
 
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+    <script>
+      // Form submission handler
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent default form submission
+
+        // Collect form data
+        const formData = {
+          name: document.getElementById("name").value,
+          prenom: document.getElementById("prenom").value,
+          unité: document.getElementById("unité").value,
+          fonction: document.getElementById("fonction").value,
+          tele: document.getElementById("tele").value,
+          email: document.getElementById("email").value,
+          formule: document.getElementById("formule").value,
+        };
+
+        let template = fetch("../templates/inscription.html", {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+          },
+        })
+          .then((response) => {
+            return response.text();
+          })
+          .then((mail) => {
+            // Replace placeholders in the template with form data
+            mail = mail.replace(
+              /{from}/g,
+              `${formData.name} ${formData.prenom}`,
+            );
+            mail = mail.replace(/{prenom}/g, formData.prenom);
+            mail = mail.replace(/{unité}/g, formData.unité);
+            mail = mail.replace(/{fonction}/g, formData.fonction);
+            mail = mail.replace(/{tele}/g, formData.tele);
+            mail = mail.replace(/{email}/g, formData.email);
+            mail = mail.replace(/{formule}/g, formData.formule);
+            mail = mail.replace(/{event}/g, "Caribea Fit Festival");
+
+            const mailData = {
+              to: "cse.oasis24@gmail.com", // list of receivers
+              subject: `[CSE Ehpad Oasis] Nouvelle inscription : Caribea Fit Festival`,
+              html: mail,
+            };
+            fetch("https://gministudio.fr/send-mail", {
+              method: "POST",
+              body: JSON.stringify({ ...mailData }),
+              headers: {
+                "Content-type": "application/json; charset=UTF-8",
+                "Access-Control-Allow-Origin": "*",
+              },
+            }).then(() => {
+              document.querySelector("form").reset();
+              document
+                .getElementById("msgSent")
+                .style.setProperty("display", "block");
+              contactForm.removeAttribute("inert");
+            });
+          });
+      });
+    </script>
+  </body>
 </html>
