@@ -308,7 +308,11 @@
                   <label for="formule">Formule</label>
                 </div>
                 <div class="d-flex justify-content-center mt-4">
-                  <button type="submit" class="btn btn-primary">
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    id="submit-form-btn"
+                  >
                     S'inscrire
                   </button>
                 </div>
@@ -403,6 +407,7 @@
       // Form submission handler
       document.querySelector("form").addEventListener("submit", function (e) {
         e.preventDefault(); // Prevent default form submission
+        document.querySelector("#submit-form-btn").setAttribute("disabled", ""); // Disable form interactions while processing
 
         // Collect form data
         const formData = {
@@ -454,7 +459,9 @@
               document
                 .getElementById("msgSent")
                 .style.setProperty("display", "block");
-              contactForm.removeAttribute("inert");
+              document
+                .querySelector("#submit-form-btn")
+                .removeAttribute("disabled"); // Re-enable form interactions
             });
           });
       });
